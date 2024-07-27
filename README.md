@@ -25,60 +25,60 @@
   * Virtualenv
 ### Setup
  1. Clone the repository:
- ```
+ ```bash
 git clone https://github.com/ashish-makes/django-tailwind-blog.git
  ```
  2. Navigate to the project directory:
-```
+```bash
  cd `django-tailwind-blog`
 ```
  3. Create and activate a new virtual environment:
-```
+```bash
  python -m venv env
  source env/bin/activate
 ```
   4. Install the project dependencies:
- ```
+ ```bash
   pip install -r requirements.txt
  ```
 
  5. Editing the portfolio:
 ```json
   {
-  "Config": {
-    "name": "your name",
-    "country": "your country",
-    "avatar": "your avtar url",
-    "introduction": "",
-    "links": {
-      "github": "https://github.com/",
-      "reddit": "https://reddit.com/",
-      "twitter": "https://twitter.com/",
-      "discord": "https://discord.com/"
-    },
-    "contact": {
-      "email": "example@gmail.com",
-      "discord": "username",
-      "webhook_url": "discord webhook url"
+    "Config": {
+      "name": "your name",
+      "country": "your country",
+      "avatar": "your avtar url",
+      "introduction": "",
+      "links": {
+        "github": "https://github.com/",
+        "reddit": "https://reddit.com/",
+        "twitter": "https://twitter.com/",
+        "discord": "https://discord.com/"
+      },
+      "contact": {
+        "email": "example@gmail.com",
+        "discord": "username",
+        "webhook_url": "discord webhook url"
+      }
     }
   }
-}
 
 ```
  6. Collect static files:
-```python
+```bash
 python manage.py collectstatic
 ```
  7. Create the database tables:
-```python
+```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
  8. Create admin super user:
-```python
+```bash
 python manage.py createsuperuser
 ```
  9. Running the project
-```python
+```bash
 python manage.py runserver
 ```
