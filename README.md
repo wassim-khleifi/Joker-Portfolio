@@ -1,10 +1,10 @@
 <img src= "demo.png">
 
-<!-- ![Downloads](https://img.shields.io/github/downloads/Jock3r99/Discord-Bot/total.svg)
-![License](https://img.shields.io/github/license/Jock3r99/Discord-Bot.svg)
-![size](https://img.shields.io/github/repo-size/Jock3r99/Discord-Bot)
-<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/Jock3r99/Discord-Bot">
-<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Discord.py"> -->
+![Downloads](https://img.shields.io/github/downloads/Jock3r99/Joker-Portfolio/total.svg)
+![License](https://img.shields.io/github/license/Jock3r99/Joker-Portfolio.svg)
+![size](https://img.shields.io/github/repo-size/Jock3r99/Joker-Portfolio)
+<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/Jock3r99/Joker-Portfolio">
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Joker-Portfolio">
 
 # Joker Portfolio
 
@@ -24,25 +24,25 @@
   * Django
   * Virtualenv
 ### Setup
-1. Clone the repository:
-```
-  git clone https://github.com/ashish-makes/django-tailwind-blog.git
-```
-2. Navigate to the project directory:
+ 1. Clone the repository:
+ ```
+git clone https://github.com/ashish-makes/django-tailwind-blog.git
+ ```
+ 2. Navigate to the project directory:
 ```
  cd `django-tailwind-blog`
 ```
-3. Create and activate a new virtual environment:
+ 3. Create and activate a new virtual environment:
 ```
  python -m venv env
  source env/bin/activate
 ```
-4. Install the project dependencies:
-```
- pip install -r requirements.txt
-```
+  4. Install the project dependencies:
+ ```
+  pip install -r requirements.txt
+ ```
 
-5. Editing the portfolio:
+ 5. Editing the portfolio:
 ```json
   {
   "Config": {
@@ -65,36 +65,20 @@
 }
 
 ```
-6. Collect static files:
+ 6. Collect static files:
 ```python
 python manage.py collectstatic
 ```
-7. Create the database tables:
+ 7. Create the database tables:
 ```python
 python manage.py makemigrations
 python manage.py migrate
 ```
-8. Create admin super user:
+ 8. Create admin super user:
 ```python
 python manage.py createsuperuser
 ```
-9. Running the project
+ 9. Running the project
 ```python
 python manage.py runserver
 ```
-
- 
-## Hosting:
-* You Can Host The Website With  <a href="https://app.infinityfree.net">Host</a>
-* If You Got Problems You Can Contact Me On Discord <a href="https://discord.gg/HbxRqqraqz">Discord</a>
-
-## Commands:
-* **help**
-* **Moderation**: ban , kick , clear , poll
-* **Economy**: work , beg , balance , deposit, withdraw , shop , buy , sell , bag | server_coins , servers_shop , buy_item | addcoins_sv , add_money
-* **Ticket**: tcreate , tclose
-* **Events**: number , giveaway , darkweb
-* **Information**: support , server , ping , vote
-* **Music**: join , leave , play , pause , stop , resume , volume
-## Editing
-This bot (and the source code here) might not be easy to edit for inexperienced programmers. The main purpose of having the source public is to show the capabilities of the libraries, to allow others to understand how the bot works, and to allow those knowledgeable about discord.py and Discord bot development to contribute. There are many requirements and dependencies required to edit and compile it, and there will not be support provided for people looking to make changes on their own. Instead, consider making a feature request (see the above section). If you choose to make edits, please do so in accordance with the MIT License.
