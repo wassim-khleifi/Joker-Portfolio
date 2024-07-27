@@ -26,11 +26,11 @@
 ### Setup
  1. Clone the repository:
  ```bash
-git clone https://github.com/ashish-makes/django-tailwind-blog.git
+git clone https://github.com/Jock3r99/Joker-Portfolio.git
  ```
  2. Navigate to the project directory:
 ```bash
- cd `django-tailwind-blog`
+ cd 'Joker-Portfolio'
 ```
  3. Create and activate a new virtual environment:
 ```bash
