@@ -82,6 +82,12 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+10. Access the admin panel:
+```
+Go to 127.0.0.1/admin. Write your super username and password and you will be able to access the admin panel.
+You can add your projects and jobs using it.
+```
+
 
 ## IMPORTANT:
 #### When using my work, you must accept the terms of use otherwise i will use legal actions.
