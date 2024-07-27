@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Caching -->
+    <meta http-equiv="Cache-control" content="public">
+    <!--  META TAGS -->
+    <meta name="title" property="og:title" content="Jok3R Portfolio">
+    <meta name="description" property="og:title" content="Hey, I'm Jok3R. A 16 years old Full stack developer who have been coding for 2 years!">
+	<meta property="og:type" content="website" />
+    <meta name="description" property="og:image" content="">
+    <meta property="og:url" content="" />
+    <link rel="icon" href="">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+	<link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css'%}">
+	<title>Jok3R | Home</title>
+</head>
+<body>
+    <section class="main">
+        <!-- Nav Bar -->
+        <div>
+        <nav class="navbar navbar-expand-lg" id="home">
+            <a class="navbar-brand" href="#"><span class="colored">J</span>ok<span class="colored">3</span>R</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-grid align-items-center"><ion-icon name="apps" style="color: white;font-size: 1.4rem;"></ion-icon></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a" href="{% url 'blog' %}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link a" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <div class="header_content">
+            <div>
+            <h4>Developer</h4>
+            <h1>Hi, I'm <span class="header_colored">{{ config.name }}</span>, <br>From {{ config.country }}</h1>
+            <div class="icons">
+                {% if config.links.github %}
+                <a href="{{ config.links.github }}" target="_blank" class="fa fa-github"></a>
+                {% endif %}
+                {% if config.links.reddit %}
+                <a href="{{ config.links.reddit }}" target="_blank" class="fa fa-reddit" id="reddit"></a>
+                {% endif %}
+                {% if config.links.twitter %}
+                <a href="{{ config.links.twitter }}" target="_blank" class="fa fa-twitter" id="twitter"></a>
+                {% endif %}
+                {% if config.links.discord %}
+                <a href="{{ config.links.discord }}" target="_blank" class="fab fa-discord" id="discord"></a>
+                {% endif %}
+            </div></div>
+        </div>
+    </section>
+
+    <section class="second">
+        <!-- ABOUT ME -->
+        <div class="about" id="about">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src=" {{ config.avatar }} " alt="">
+                </div>
+                <div class="col-md-7 col-sm-12 content">
+                    <h1 class="title">About me</h1>
+                    <p class="text-muted">{{ config.introduction }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MY SKILLS -->
+        <div class="skills" id="skills">
+            <h1 class="title">My Skills</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 box"><i class="devicon-html5-plain colored"></i>HTML5</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />CSS3</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />Javascript</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />Python</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />Bootstrap</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />Jquery</div>
+                <div class="col-md-3 col-sm-12 box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />Django</div>
+                <div class="col-md-3 col-sm-12 box"><i class="devicon-flask-original"></i>Flask</div>
+            </div>
+        </div>
+
+        <!-- MY PROJECTS -->
+        <div class="projects" id="projects">
+            <h1 class="title-projects">My Projects</h1>
+            <div class="row justify-content-center">
+                {% for project in projects %}
+                <div class="col-md-5 col-sm-12 box">
+                    <img src="{{ project.banner.url }}" alt="">
+                    <div class="content">
+                        <h4>{{ project.name }}</h4>
+                        <p class="text-muted" style="margin: 0!important;">{{ project.description }}</p>
+                        <a href="{{ project.redirect }}" class="learn_more">Learn more...</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- MY JOBS -->
+        <div class="jobs" id="jobs">
+            <h1 class="jobs-title">My Jobs:</h1>
+            <div class="row justify-content-center">
+                {% for job in jobs %}
+                <div class="col-md-3 col-sm-12 box">
+                    <img src="{{ job.banner.url }}" alt="">
+                    <div class="layer d-flex justify-content-center align-items-center text-center">
+                        <h3>{{ job.name }}</h3>
+                        <p>{{ job.description }}</p>
+                        <a href="{{ job.redirect }}" target="_blank" class="fas fa-external-link-alt" aria-hidden="true"></a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact" id="contact">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 left">
+                    <h4>Contact Me:</h4>
+                    <p>• <span>Email:</span> {{ config.contact.email }}</p>
+                    <p>• <span>Discord:</span> {{ config.contact.discord }}</p>
+                </div>
+                <div class="col-md-7 col-sm-12 right">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input type="email" placeholder="Your email" name="email">
+                        <input type="text" placeholder="Your name" name="name">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="width: 90%;">
+        <p>Copyright © Jok3R. Made with <i class="fas fa-heart" aria-hidden="true"></i> by <a href="">Jok3R</a></p>
+    </footer>
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8043a4a7f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- ANIMATIONS JQUERY -->
+    <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  <style>
+    .main{
+        background-image: url("{% static 'images/background.jpg'%}")!important;
+    }
+    @media(max-width: 750px){
+        .main{
+            background-image: url("{% static 'images/background-phone.jpg'%}")!important;
+        }
+    }
+  </style>
+</body>
+</html>
