@@ -82,3 +82,9 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
+
+## IMPORTANT:
+* When using my work, you must accept the terms of use otherwise i will use legal actions.
+- Selling this website or any of its elements is prohibited.
+- Claiming ownership of this website is not permitted.
+- Altering the credit notice ("Developed with ❤️ by Jok3R") in the footer is not allowed.
