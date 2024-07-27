@@ -1,0 +1,19 @@
+{
+	"Config": {
+		"name": "Jok3R",
+		"country": "Tunisia",
+		"avatar": "https://media.discordapp.net/attachments/1206240128100466708/1266506413849575526/about_image.png?ex=66a56583&is=66a41403&hm=de32d92e658c439f8493df3d988269a69977312e25b84c2c50c24a38a0df6622&=&format=webp&quality=lossless&width=202&height=202",
+		"introduction": "I’m a passionate full-stack developer with a keen interest in open-source technologies and the web. With a two years of learning, I’ve developed a solid foundation in web development, embracing best practices. As a 16-year-old, I’m excited about contributing to the open-source community and have already started working on various projects.",
+		"links": {
+			"github": "https://github.com/Jock3r99",
+			"reddit": "https://reddit.com/",
+			"twitter": "https://twitter.com/",
+			"discord": "https://discord.com/"
+		},
+		"contact": {
+			"email": "jock3r8944@gmail.com",
+			"discord": "jock3r9",
+			"webhook_url": "https://discord.com/api/webhooks/1266031358661234729/_5jjnjCGUHYMQGuk6qKZ1YtuDRg84Sh3TH1AqxNxMNzd46sgiCV2UC9KMv_rRq8FwIdF"
+		}
+	}
+}
