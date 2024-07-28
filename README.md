@@ -35,14 +35,14 @@ git clone https://github.com/Jock3r99/Joker-Portfolio.git
  3. Create and activate a new virtual environment:
 ```bash
  python -m venv env
- source env/bin/activate
+ source env/Scripts/activate
 ```
   4. Install the project dependencies:
  ```bash
   pip install -r requirements.txt
  ```
 
- 5. Editing the portfolio:
+ 5. Edit the portfolio config:
 ```json
   {
     "Config": {
@@ -73,6 +73,7 @@ python manage.py collectstatic
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+python manage.py migrate --run-syncdb
 ```
  8. Create admin super user:
 ```bash
@@ -84,8 +85,9 @@ python manage.py runserver
 ```
 10. Access the admin panel:
 ```
-Go to 127.0.0.1/admin. Write your super username and password and you will be able to access the admin panel.
-You can add your projects and jobs using it.
+Go to 127.0.0.1/admin. Write your super username and password and
+you will be able to access the admin panel. You can add your projects and
+jobs using it.
 ```
 
 
