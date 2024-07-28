@@ -96,3 +96,7 @@ jobs using it.
 - Selling this website or any of its elements is prohibited.
 - Claiming ownership of this website is not permitted.
 - Altering the credit notice ("Developed with ❤️ by Jok3R") in the footer is not allowed.
+
+## Editing:
+```md
+- This project (and the source code here) might not be easy to edit for inexperienced programmers. The main purpose of having the source public is to show the capabilities of the libraries, to allow others to understand how the code works, and to allow those knowledgeable about django development to contribute. There are many requirements and dependencies required to edit and compile it, and there will not be support provided for people looking to make changes on their own. If you choose to make edits, please do so in accordance with the MIT License.```
