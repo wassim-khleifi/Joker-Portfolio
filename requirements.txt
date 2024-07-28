@@ -1,0 +1,7 @@
+Django
+requests
+SQLAlchemy
+sqlparse
+psycopg2-binary
+urllib3
+Pillow
