@@ -1,10 +1,10 @@
 <img src= "demo.png">
 
-![Downloads](https://img.shields.io/github/downloads/Jock3r99/Joker-Portfolio/total.svg)
-![License](https://img.shields.io/github/license/Jock3r99/Joker-Portfolio.svg)
-![size](https://img.shields.io/github/repo-size/Jock3r99/Joker-Portfolio)
-<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/Jock3r99/Joker-Portfolio">
-<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/Joker-Portfolio">
+![Forks](https://img.shields.io/github/forks/Jock3r99/Joker-Portfolio)
+![GitHub stars](https://img.shields.io/github/stars/Jock3r99/Joker-Portfolio)
+![License](https://img.shields.io/github/license/Jock3r99/Joker-Portfolio)
+![Size](https://img.shields.io/github/repo-size/Jock3r99/Joker-Portfolio)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/discord.py)
 
 # Joker Portfolio
 ### [Demo](https://Jok3r.vercel.app/)
