@@ -189,41 +189,58 @@ nav{
 }
 .projects .row{
 	margin: 2rem 0.5rem!important;
+	width: 100%!important;
 }
 .projects .row .box{
-	background: #1C1C1C;
+/*	background: #1C1C1C;*/
+  background: #262626;
 	padding: 0!important;
-	border-radius: 15px;
-	margin: 15px 30px;
-	border: 2px white solid;
-	cursor: pointer;
-	padding: 10px 7px!important;
-	min-height: 100%;
+	border-radius: 10px;
+	margin: 15px 10px;
+	padding: 10px 10px!important;
+	min-height: fit-content;
 }
 .projects .row .box:hover{
 	border-color: var(--color-theme);
-	box-shadow: 0px 0px 1px black, 0 0 20px var(--color-theme), 0 0 3px darkblue;
+	filter: drop-shadow(0 0 10px var(--color-theme));
 	transform: translateY(-10px);
-	transition: 0.3s;
+	transition: 0.5s;
 }
 .projects .row .box img{
 	border-radius: 5px;
 	width: 100%;
-	height: 21vh;
+	height: 27vh;
+	display: block;
 }
 .projects .row .box .content{
-	padding: 2px 8px;
+	padding: 5px 10px;
 }
 .projects .row .box .content h4{
 	color: white;
-	font-size: 1.7rem;
-	letter-spacing: 1px;
-	font-weight: 500;
+	font-size: 1.9rem;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+.projects .row .box .content p{
+	color: white;
+	font-size: 1.0rem;
+	letter-spacing: 0.1px;
+	font-weight: 400;
+	margin-bottom: 15px!important;
 }
 .projects .row .box .content .learn_more{
-	margin: 20px 0px!important;
+	background: var(--color-theme);
+	padding: 7px 15px;
+	font-weight: 600!important;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
 }
-
+.projects .row .box .content .learn_more:hover{
+	opacity: 0.7;
+	transition: 0.1s;
+}
 /** JOBS **/
 .jobs .jobs-title{
 	color: white;
@@ -264,14 +281,14 @@ nav{
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
-	background: linear-gradient(rgba(0,0,0,0.4), #ff004f); 
+	background: linear-gradient(rgba(0,0,0,0.6), #ff004f); 
 	flex-direction: column;
 	border-radius: 7px!important;
 }
 .jobs .row .box .layer h3{
 	color: white;
 	font-size: 1.17em;
-	font-weight: 500;
+	font-weight: 600;
 	margin-bottom: 20px;
 }
 .jobs .row .box .layer p{
@@ -361,11 +378,11 @@ nav{
 		align-items: start!important;
 	}
 }
-@media(width < 950px){
+@media(width < 1000px){
 	.jobs .row .box{
 		margin: 30px auto!important;
-		height: 40vh;
-		width: 80%!important;
+		height: 55vh;
+		width: 70%!important;
 	}
 }
 @media(width <= 1000px){
@@ -404,7 +421,7 @@ nav{
 		min-height: 100%;
 	}
 	.projects .row .box img{
-		height: 16vh;
+		height: 30vh;
 	}
 	.contact .left{
 		text-align: center;
