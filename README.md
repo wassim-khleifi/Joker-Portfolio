@@ -38,6 +38,7 @@ git clone https://github.com/Jock3r99/Joker-Portfolio.git
 ```
   4. Install the project dependencies:
  ```bash
+  cd 'Joker-Portfolio'
   pip install -r requirements.txt
  ```
 
