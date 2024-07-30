@@ -73,7 +73,7 @@
 
     <section class="second">
         <!-- ABOUT ME -->
-        <div class="about" id="about">
+        <div class="about reveal" id="about">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <img src=" {{ config.avatar }} " alt="">
@@ -86,7 +86,7 @@
         </div>
 
         <!-- MY SKILLS -->
-        <div class="skills" id="skills">
+        <div class="skills reveal" id="skills">
             <h1 class="title">My Skills</h1>
             <div class="row">
                 <div class="col-md-3 col-sm-12 box"><i class="devicon-html5-plain colored"></i>HTML5</div>
@@ -101,15 +101,15 @@
         </div>
 
         <!-- MY PROJECTS -->
-        <div class="projects" id="projects">
+        <div class="projects reveal" id="projects">
             <h1 class="title-projects">My Projects</h1>
             <div class="row justify-content-center">
                 {% for project in projects %}
                 <div class="col-md-5 col-sm-12 box">
-                    <img src="{{ project.banner.url }}" alt="">
+                    <img src="{{ project.banner }}" alt="">
                     <div class="content">
                         <h4>{{ project.name }}</h4>
-                        <p class="text-muted" style="margin: 0!important;">{{ project.description }}</p>
+                        <p class="text-muted">{{ project.description }}</p>
                         <a href="{{ project.redirect }}" class="learn_more">Learn more...</a>
                     </div>
                 </div>
@@ -118,12 +118,12 @@
         </div>
 
         <!-- MY JOBS -->
-        <div class="jobs" id="jobs">
+        <div class="jobs reveal" id="jobs">
             <h1 class="jobs-title">My Jobs:</h1>
             <div class="row justify-content-center">
                 {% for job in jobs %}
                 <div class="col-md-3 col-sm-12 box">
-                    <img src="{{ job.banner.url }}" alt="">
+                    <img src="{{ job.banner }}" alt="">
                     <div class="layer d-flex justify-content-center align-items-center text-center">
                         <h3>{{ job.name }}</h3>
                         <p>{{ job.description }}</p>
@@ -135,7 +135,7 @@
         </div>
 
         <!-- CONTACT -->
-        <div class="contact" id="contact">
+        <div class="contact reveal" id="contact">
             <div class="row">
                 <div class="col-md-5 col-sm-12 left">
                     <h4>Contact Me:</h4>
@@ -191,10 +191,32 @@
     });
   });
   </script>
+  <script>
+    function handleScroll(){
+        reveals = $(".reveal")
+        for(var i =0;i < reveals.length; i++){
+                var x = window.innerHeight - 115
+                if(reveals[i].getBoundingClientRect().top < x){
+                    reveals[i].classList.add("active");
+                }
+            }
+    }
+    window.addEventListener("scroll", handleScroll);
+    </script>
   <style>
     .main{
         background-image: url("{% static 'images/background.jpg'%}")!important;
     }
+    .reveal{
+    position: relative;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
     @media(max-width: 750px){
         .main{
             background-image: url("{% static 'images/background-phone.jpg'%}")!important;
