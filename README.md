@@ -106,3 +106,8 @@ to contribute. There are many requirements and dependencies required to edit and
 there will not be support provided for people looking to make changes on their own. If you choose
 to make edits, please do so in accordance with the MIT License.
 ```
+
+## Donation:
+If you love the portfolio, feel free to support me:
+<br>
+<a href='https://ko-fi.com/jock3r9'><img src='https://ko-fi.com/img/githubbutton_sm.svg' height="27px"/></a>
