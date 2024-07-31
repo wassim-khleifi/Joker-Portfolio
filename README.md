@@ -110,5 +110,4 @@ to make edits, please do so in accordance with the MIT License.
 ## Donation:
 If you love the portfolio, feel free to support me:
 
-<br>
 <a href='https://ko-fi.com/jock3r9'><img src='https://ko-fi.com/img/githubbutton_sm.svg' height="27px"/></a>
