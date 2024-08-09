@@ -85,9 +85,9 @@ python manage.py runserver
 ```
 10. Access the admin panel:
 ```
-Go to 127.0.0.1/admin. Write your super username and password and
+Go to /admin. Write your super username and password and
 you will be able to access the admin panel. You can add your projects and
-jobs using it.
+jobs there.
 ```
 
 
