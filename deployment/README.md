@@ -34,9 +34,9 @@ DEBUG = False
 ```
 
 ### Recommended Hosts:
-* [Pythonanywhere](https://www.pythonanywhere.com/)
-* [Vercel](https://vercel.com/)
-* [Render](https://render.com/)
+* [Pythonanywhere](https://www.pythonanywhere.com/) | Details: [Article](https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/)
+* [Vercel](https://vercel.com/) | Details: [Article](https://vercel.com/templates/python/django-hello-world)
+* [Render](https://render.com/) | Details: [Article](https://docs.render.com/deploy-django)
 
 ### Support:
 * For any additional support, contact me on discord (username: jock3r9).
