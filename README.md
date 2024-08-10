@@ -90,6 +90,9 @@ you will be able to access the admin panel. You can add your projects and
 jobs there.
 ```
 
+## Deployment Tutorial:
+* [Click Me](https://github.com/Jock3r99/Joker-Portfolio/tree/main/deployment)
+
 
 ## IMPORTANT:
 #### When using my work, you must accept the terms of use otherwise i will use legal actions.
