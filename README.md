@@ -94,7 +94,7 @@ jobs there.
 * [Click Me](https://github.com/Jock3r99/Joker-Portfolio/tree/main/deployment)
 
 
-## IMPORTANT:
+## Important:
 #### When using my work, you must accept the terms of use otherwise i will use legal actions.
 - Selling this website or any of its elements is prohibited.
 - Claiming ownership of this website is not permitted.
