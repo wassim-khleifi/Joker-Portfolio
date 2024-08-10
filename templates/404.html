@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Caching -->
+    <meta http-equiv="Cache-control" content="public">
+    <!--  META TAGS -->
+    <meta name="title" property="og:title" content="Jok3R Portfolio | 404 Not Found">
+    <meta name="description" property="og:title" content="It seems like you are lost... This page doesn't exist or has been moved.">
+	<meta property="og:type" content="website" />
+    <meta name="description" property="og:image" content="">
+    <meta property="og:url" content="" />
+    <link rel="icon" href="">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<title>Jok3R | 404 Not Found</title>
+</head>
+<body>
+	<div class="main">
+		<div>
+			<h1 class="mark">?</h1>
+			<h1>404 Not Found</h1>
+			<p>It seems like you are lost...</p>
+			<div class="buttons">
+				<a href="{% url 'index' %}">Go Home</a>
+				<a href="{% url 'index' %}#contact">Contact Support</a>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+{% load static %}
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins' sans-serif !important;
+	font-weight: bold;
+}
+html{
+	scroll-behavior: smooth!important;
+}
+:root{
+	--color-theme: #ff004f;
+}
+body{
+  width: 100%;
+  background-color: black!important;
+}
+.main{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+.main div{
+	text-align: center;
+}
+.main div .mark{
+	font-size: 5rem;
+	animation: mark 3s infinite;
+}
+@keyframes mark{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.main div h1{
+	color: white;
+	font-size: 4rem;
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-family: 'Poppins';
+	color: var(--color-theme);
+	overflow: hidden;
+}
+.main div p{
+	margin: 20px 0;
+	color: white;
+	font-size: 1.4rem;
+	margin: 10px 0;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-family: 'Poppins';
+	color: white;
+}
+.main div .buttons a{
+	display: inline-block;
+	margin: 30px 10px;
+	background: var(--color-theme);
+	padding: 5px 12px;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Poppins';
+}
+.main div .buttons a:hover{
+	box-shadow: 0 0 25px var(--color-theme);
+	transition: 0.4s;
+}
+</style>
+</html>

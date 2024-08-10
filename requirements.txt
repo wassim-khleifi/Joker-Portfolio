@@ -5,3 +5,4 @@ sqlparse
 psycopg2-binary
 urllib3
 Pillow
+djangorestframework
